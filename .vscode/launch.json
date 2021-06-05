@@ -1,0 +1,32 @@
+{
+  // Use IntelliSense to learn about possible attributes.
+  // Hover to view descriptions of existing attributes.
+  // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "(cppdbg) Launch Run",
+      "preLaunchTask": "Bazel Build",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bazel-bin/textto3d/main",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/bazel-bin/textto3d/main.runfiles/__main__",
+      "environment": [],
+      "externalConsole": false,
+    },
+    {
+      "name": "(cppdbg) Launch Debug",
+      "preLaunchTask": "Bazel Build (Debug)",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/bazel-bin/textto3d/main",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}/bazel-bin/textto3d/main.runfiles/__main__",
+      "environment": [],
+      "externalConsole": false,
+    }
+  ]
+}
