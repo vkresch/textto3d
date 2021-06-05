@@ -15,6 +15,7 @@
       "cwd": "${workspaceFolder}/bazel-bin/textto3d/main.runfiles/__main__",
       "environment": [],
       "externalConsole": false,
+      "MIMode": "gdb",
     },
     {
       "name": "(cppdbg) Launch Debug",
@@ -27,6 +28,7 @@
       "cwd": "${workspaceFolder}/bazel-bin/textto3d/main.runfiles/__main__",
       "environment": [],
       "externalConsole": false,
+      "MIMode": "gdb",
     }
   ]
 }

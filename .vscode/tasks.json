@@ -3,7 +3,7 @@
     "tasks": [
         {
             "label": "Bazel Build (Debug)",
-            "command": "bazel build //textto3d:main -c dbg",
+            "command": "bazel build --cxxopt='-std=c++17' //textto3d:main -c dbg",
             "type": "shell",
             "args": [],
             "problemMatcher": [
@@ -12,7 +12,10 @@
             "presentation": {
                 "reveal": "always"
             },
-            "group": "build"
+            "group": {
+                "kind": "build",
+                "isDefault": true
+              },
         },
         {
             "label": "Bazel Build (Run)",
@@ -29,7 +32,7 @@
         },
         {
             "label": "Bazel Build",
-            "command": "bazel build //textto3d:main",
+            "command": "bazel build --cxxopt='-std=c++17' //textto3d:main",
             "type": "shell",
             "args": [],
             "problemMatcher": [
