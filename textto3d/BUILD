@@ -23,5 +23,7 @@ qt_cc_library(
         "@qt//:qt_core",
         "@qt//:qt_widgets",
         "@qt//:qt_gui",
+        "@qt//:qt_opengl",
+        "@qt//:glu"        
     ]
 )

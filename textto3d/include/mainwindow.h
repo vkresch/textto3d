@@ -2,6 +2,8 @@
 
 #include <QtGui/QOpenGLWindow>
 #include <QtCore/QObject>
+#include <QtGui/QSurfaceFormat>
+#include <QtGui/QOpenGLFunctions>
 
 class MainWindow: public QOpenGLWindow {
     Q_OBJECT;
@@ -16,4 +18,8 @@ protected:
     virtual void paintGL();
     void resizeEvent(QResizeEvent *event);
     void paintEvent(QPaintEvent *event);
+
+private:
+    QOpenGLContext *context;
+    QOpenGLFunctions *openGLFunctions;
 };

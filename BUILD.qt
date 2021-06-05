@@ -29,3 +29,24 @@ cc_library(
     ],
     visibility = ["//visibility:public"],
 )
+
+cc_library(
+    name = "qt_opengl",
+    hdrs = glob(["QtOpenGL/**"]),
+    includes = ["."],
+    deps = [":qt_core"],
+    linkopts = [
+        "-lQt5OpenGL",
+    ],
+    visibility = ["//visibility:public"],
+)
+
+cc_library(
+    name = "glu",
+    hdrs = glob(["usr/include/GL/**"]),
+    includes = ["."],
+    linkopts = [
+        "-lGL -lGLU -lglut",
+    ],
+    visibility = ["//visibility:public"],
+)
